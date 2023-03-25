@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = ({ title, products }) => {
+const Home = ({ title, products, handleClick }) => {
 	
 	return (
 		<div>
@@ -8,6 +8,7 @@ const Home = ({ title, products }) => {
 			{products.map((product, index) => (
 				<li key={index}>{product}</li>
 			))}
+			<button onClick={handleClick}>Click Me</button>
 		</div>
 	)
 }
